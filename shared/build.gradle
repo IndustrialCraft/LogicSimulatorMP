@@ -1,0 +1,11 @@
+eclipse.project.name = appName + '-shared'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+dependencies {
+    implementation 'com.github.IndustrialCraft:NetX:58dcf94dac'
+    implementation group: 'io.netty', name: 'netty-all', version: '4.1.69.Final'
+    implementation 'com.google.protobuf:protobuf-java:3.20.1'
+}

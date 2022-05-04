@@ -1,0 +1,12 @@
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+eclipse.project.name = appName + '-core'
+
+repositories {
+	maven { url 'https://jitpack.io' }
+}
+dependencies {
+	implementation 'com.github.IndustrialCraft:NetX:58dcf94dac'
+	implementation 'com.google.protobuf:protobuf-java:3.20.1'
+	api "com.badlogicgames.gdx:gdx:$gdxVersion"
+	api project(':shared')
+}
